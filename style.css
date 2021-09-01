@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+body {
+    margin: 25px 10px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: url(images/pattern-background-desktop.svg) no-repeat;
+    background-color: #e0e8ff;
+}
+
+card {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #fff;
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+card .image img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    position: relative;
+}
+
+card .content {
+    padding: 25px 35px;
+    text-align: center;
+}
+
+card .content h2 {
+    font-weight: 800;
+    padding-bottom: 20px;
+}
+
+card .content p {
+    opacity: 0.7;
+}
+
+card .content .music {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-grid-columns: 45px 100px 1fr;
+    grid-template-columns: 45px 100px 1fr;
+    padding: 25px 10px;
+}
+
+card .content .music ul li {
+    font-size: 15px;
+    list-style: none;
+}
+
+card .content .music ul li:first-child {
+    font-weight: 700;
+}
+
+card .content .music ul li:last-child {
+    opacity: 0.7;
+}
+
+card .content .music a {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4/5;
+    color: #3e52a3;
+}
+
+card .content .music a:hover {
+    text-decoration: none;
+}
+
+card .content button {
+    padding-bottom: 20px;
+    background-color: #3829e0;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px 20px;
+    border: 2px transparent solid;
+    border-radius: 10px;
+}
+
+card .content .btn1:hover {
+    opacity: 0.6;
+}
+
+card .content .btn2 {
+    background-color: #fff;
+    color: #000;
+    opacity: 0.6;
+}
+
+card .content .btn2:hover {
+    opacity: 1;
+}
+
+.attribution {
+    padding-top: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.attribution a {
+    color: #3e52a3;
+}
+
+
+/* @media (max-width: 376px) {
+    body {
+        width: 100%;
+        height: 100vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background: url(images/pattern-background-mobile.svg) no-repeat;
+        background-color: #e0e8ff;
+    }
+} */
